@@ -82,21 +82,20 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   position: absolute;
   left: 0;
   right: 0;  
-  z-index: 99999999999;
+  z-index: 99;
 }
 
 #header .logo img {
   padding: 0;
   margin: 0;
-  max-height: 150px;
+  max-height: 130px;
 }
 
 @media (max-width: 575px) {
   #header .logo img {
     padding: 0;
     margin: 0;
-    max-height: 90px;
-    z-index: 99999999999;
+    max-height: 80px;
   }
 }
 
@@ -325,7 +324,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   position: fixed;
   right: 15px;
   top: 22px;
-  z-index: 9998;
+  z-index: 99999999999;
   border: 0;
   background: none;
   font-size: 24px;
@@ -376,7 +375,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   font-weight: 1000;
 }
 
-
 .btn-custom{
   text-transform: uppercase;
   color: #fff !important;
@@ -388,13 +386,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   border-radius: 2%;
 }
 
-
 .btn-custom:hover{
   background: #ee7843;
   color: #fff;
   cursor: pointer;
 }
-
 
 #hero {
   width: 100%;
@@ -402,7 +398,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background-color:#232531;
   border-bottom: 2px solid #fcebe3;
 }
-
 
 #hero h2 {
   color: #a08f86;
@@ -492,26 +487,46 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   #hero h1 {
     font-size: 28px;
     line-height: 36px;
+    font-weight: 1000;
   }
+
   #hero h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
+
   #hero .hero-img img {
     width: 70%;
   }
+  
   .col-md-10 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 83.33333%;
     flex: 0 0 83.33333%;
     max-width: 83.33333%;
   }
-  
+
   #hero .caption {
     font-size: 1.7rem;
   }
 
+  .btn-custom{
+    text-transform: uppercase;
+    color: #fff !important;
+    background: #3f4046;
+    padding: 10px 17px;
+    display: inline-block;
+    letter-spacing: .2em;
+    position: relative;
+    border-radius: 2%;
+    font-size: 0.75rem;
+  }
+
+  .typewriter h4{
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -542,7 +557,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 
-  
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/

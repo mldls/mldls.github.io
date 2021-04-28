@@ -82,7 +82,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   position: absolute;
   left: 0;
   right: 0;
-  z-index: 99999999999;
 }
 
 #header .logo img {
@@ -96,6 +95,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
     padding: 0;
     margin: 0;
     max-height: 90px;
+    z-index: 99999999999;
   }
 }
 
@@ -372,7 +372,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  font-weight: bolder;
+  font-weight: 1000;
 }
 
 

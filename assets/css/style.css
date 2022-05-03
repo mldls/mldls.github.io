@@ -771,6 +771,13 @@ section {
   overflow: hidden;
   border-radius: 20px;
 }
+.width_adjust {
+  position: absolute;
+  width: 350px;
+  height: 200px;
+  top: 0;
+  left: 34%;
+}
 
 .team .member img {
   width: 200px;

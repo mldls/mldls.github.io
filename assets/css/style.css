@@ -104,6 +104,7 @@ h6,
 }
 
 #header.fixed-top {
+  /* max-width: 400px; */
   height: 72px;
   transition: all 0.5s;
   z-index: 997;
@@ -334,6 +335,7 @@ h6,
 .mobile-nav-toggle {
   position: fixed;
   right: 15px;
+  /* right: 200px; */
   top: 22px;
   z-index: 99999999999;
   border: 0;
@@ -438,7 +440,7 @@ h6,
 }
 
 .typewriter {
-  display: inline-block;
+  display: flex;
 }
 
 .typewriter h4 {
@@ -454,13 +456,17 @@ h6,
   font-size: 1.33rem;
 }
 
+.text_size {
+  font-size: 19px !important;
+}
+
 /* The typing effect */
 @keyframes typing {
   from {
     width: 0;
   }
   to {
-    width: 100%;
+    width: 50%;
   }
 }
 
@@ -492,12 +498,8 @@ h6,
   #hero .hero-img img {
     width: 50%;
   }
-
-  #hero h1 {
-    font-size: 6rem;
-  }
 }
-
+/*  */
 @media (max-width: 768px) {
   #hero h1 {
     font-size: 28px;
@@ -545,6 +547,9 @@ h6,
 }
 
 @media (max-width: 575px) {
+  .text_size {
+    font-size: 17px !important;
+  }
   #hero .hero-img img {
     width: 80%;
   }
@@ -568,7 +573,10 @@ h6,
   }
 }
 
-@media (min-width: 991px) {
+@media (max-width: 487px) {
+  .text_size {
+    font-size: 13px !important;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -771,12 +779,45 @@ section {
   overflow: hidden;
   border-radius: 20px;
 }
-.width_adjust {
+/* .width_adjust {
   position: absolute;
   width: 350px;
   height: 200px;
   top: 0;
   left: 34%;
+} */
+.member_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.mobile_adjust {
+  display: flex;
+  width: 100%;
+  max-width: 350px;
+}
+.width_adjust {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  max-width: 350px;
+}
+@media (max-width: 991px) {
+  .member_container {
+    flex-direction: column;
+  }
+  .width_adjust {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: none;
+  }
+  .mobile_adjust {
+    display: flex;
+    width: 100% !important;
+    max-width: none;
+  }
 }
 
 .team .member img {

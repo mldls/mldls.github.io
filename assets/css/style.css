@@ -16,12 +16,19 @@ body {
 }
 
 a {
-  color: #eb5d1e;
+  color: #fff;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #ef7f4d;
   text-decoration: none;
+}
+
+.btn-text {
+  color: #fff;
+}
+.btn-text:hover {
+  color: #fff;
 }
 
 h1,
@@ -158,12 +165,30 @@ h6,
   padding-right: 20px;
   color: #ff5733;
 }
-
 .nav-menu a:hover,
 .nav-menu .active > a,
 .nav-menu li:hover > a {
   color: #eb5d1e;
   text-decoration: none;
+}
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.apply-btn2 {
+  background: #eb5d1e;
+  color: #fff !important;
+  border-radius: 50px;
+  margin: 0 15px;
+  padding: 10px 25px;
+}
+
+.apply-btn2:hover {
+  background: #ee7843;
+  color: #fff;
 }
 
 .nav-menu .apply-btn a {
